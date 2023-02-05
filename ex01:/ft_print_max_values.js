@@ -1,22 +1,22 @@
 function LesDeuxPlusGrandesValeursDuTableau(numbers) {
-  let largest1 = numbers[0];
-  let largest2 = numbers[1];
+  let lepluslarge1 = numbers[0];
+  let lepluslarge2 = numbers[1];
 
-  if (largest2 > largest1) {
-    [largest1, largest2] = [largest2, largest1];
+  if (lepluslarge2 > lepluslarge1) {
+    [lepluslarge1, lepluslarge2] = [lepluslarge2, lepluslarge1];
   }
 
   for (let i = 2; i < numbers.length; i++) {
     const currentNumber = numbers[i];
-    if (currentNumber > largest1) {
-      largest2 = largest1;
-      largest1 = currentNumber;
-    } else if (currentNumber > largest2) {
-      largest2 = currentNumber;
+    if (currentNumber > lepluslarge1) {
+      lepluslarge2 = lepluslarge1;
+      lepluslarge1 = currentNumber;
+    } else if (currentNumber > lepluslarge2) {
+      lepluslarge2 = currentNumber;
     }
   }
 
-  return [largest1, largest2];
+  return [lepluslarge1, lepluslarge2];
 }
 
 const numbers = [10, 100, 500, 3, 8, 230];
