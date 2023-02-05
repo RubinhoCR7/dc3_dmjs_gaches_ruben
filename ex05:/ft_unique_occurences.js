@@ -10,6 +10,6 @@ function valueSontEllesUniques(array) {
   }
 }
 
-let array1 = [10, 20, 30, 40];
+let array1 = [10, 20, 30, 40, 50];
 
 console.log(valueSontEllesUniques(array1));
